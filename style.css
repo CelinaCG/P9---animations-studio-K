@@ -8,5 +8,38 @@
  Description: Thème enfant à l'ocasion de la nomination aux Oscars Shorts
  Version: 0.1
 */
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.story h2::after {
+  animation: rotation 3s linear infinite;
+}
 
-/*# sourceMappingURL=style.css.map */
+.story__article::after {
+  animation: rotation 3s linear infinite;
+}
+
+#studio h2::before {
+  animation: rotation 3s linear infinite;
+}
+
+#studio h2::after {
+  animation: rotation 3s linear infinite;
+}
+
+.site-footer::before {
+  animation: rotation 3s linear infinite;
+}
+
+.site-footer::after {
+  animation: rotation 3s linear infinite;
+}
+
+.site-footer ul::after {
+  animation: rotation 3s linear infinite;
+}/*# sourceMappingURL=style.css.map */
