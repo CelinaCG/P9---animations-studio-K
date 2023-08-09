@@ -49,6 +49,7 @@ get_header();
 
 		endif;
         get_template_part( 'template-parts/section', 'oscars' );
+		echo("Je veux que ce texte s'affiche");
 		?>
 
 	</main><!-- #main -->
