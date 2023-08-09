@@ -57,11 +57,11 @@
 @keyframes fade-in {
     from{
         opacity: 0;
-        transform: translate(0%, 0%);
+        transform: translate(0%, -100%);
     }
     to{
         opacity: 1;
-        transform: translate(0%, 100%);
+        transform: translate(0%, 0%);
     }
 }
 
@@ -74,13 +74,8 @@
 
 // Animation titres
 
-#studio h2 {
-    color:red;
-    animation: animation-titre 1s ease;
-}
-
-h2 {
-    color:red;
+.animation-titre {
+    
     animation: animation-titre 1s ease;
 }
 
