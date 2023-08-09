@@ -10,11 +10,11 @@
 */
 @keyframes rotation {
   from {
-    transform-origin: center center;
+    transform-origin: center;
     transform: rotate(0deg);
   }
   to {
-    transform-origin: center center;
+    transform-origin: center;
     transform: rotate(360deg);
   }
 }
@@ -49,24 +49,18 @@
 @keyframes fade-in {
   from {
     opacity: 0;
-    transform: translate(0%, 0%);
+    transform: translate(0%, -100%);
   }
   to {
     opacity: 1;
-    transform: translate(0%, 100%);
+    transform: translate(0%, 0%);
   }
 }
 .banner {
   animation: fade-in ease 3s;
 }
 
-#studio h2 {
-  color: red;
-  animation: animation-titre 1s ease;
-}
-
-h2 {
-  color: red;
+.animation-titre {
   animation: animation-titre 1s ease;
 }
 
@@ -75,6 +69,6 @@ h2 {
     transform: translate(0%, 0%);
   }
   to {
-    transform: translate(100px, 100%);
+    transform: translate(0%, -30%);
   }
 }/*# sourceMappingURL=style.css.map */
