@@ -36,10 +36,12 @@
 
 .site-footer::before {
   animation: rotation 3s linear infinite;
+  top: 12em;
 }
 
 .site-footer::after {
   animation: rotation 3s linear infinite;
+  bottom: 50.8em;
 }
 
 .site-footer ul::after {
@@ -60,10 +62,6 @@
   animation: fade-inHB ease 3s;
 }
 
-.site-footer ul {
-  animation: fade-inBH ease 3s;
-}
-
 .animation-titre {
   animation: animation-titre 1s ease;
 }
@@ -73,6 +71,26 @@
     transform: translate(0%, 100%);
   }
   to {
-    transform: translate(0%, -1%);
+    transform: translate(0%, 0%);
   }
+}
+.oscars .rubrique-oscars .texte-oscars {
+  background-image: url("./assets/images/Rectangle 23.png");
+}
+
+.site-footer {
+  flex-direction: column;
+}
+
+.texte-oscars {
+  padding: 3em 3em;
+}
+
+.rubrique-oscars {
+  display: flex;
+  align-items: center;
+}
+
+.oscars {
+  margin-bottom: 250px;
 }/*# sourceMappingURL=style.css.map */
