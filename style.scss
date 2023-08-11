@@ -40,10 +40,12 @@
 
 .site-footer::before {
     animation: rotation 3s linear infinite;
+    top: 12em;
 }
  
 .site-footer::after {
     animation: rotation 3s linear infinite;
+    bottom: 50.8em;
 }
 
 .site-footer ul::after {
@@ -70,7 +72,7 @@
     
 }
 
-// Tous les élements en dehors de la 1ère bannière (sauf les textes) ont un effet fade-in du bas vers le haut
+// Tous les élements en dehors de la 1ère bannière (sauf les textes) ont un effet fade-in du bas vers le haut (Optionnel)
 
 // @keyframes fade-inBH {
 //     from{
@@ -115,9 +117,9 @@
 //     animation: fade-inBH ease 3s;
 // }
 
-.site-footer ul {
-    animation: fade-inBH ease 3s;
-}
+// .site-footer ul {
+//     animation: fade-inBH ease 3s;
+// }
 
 
 // Animation titres
@@ -132,6 +134,30 @@
         transform: translate(0%, 100%) ;
     }
     to{
-        transform: translate(0%, -1%) ;
+        transform: translate(0%, 0%) ;
     }
 }
+
+// Section Oscars
+
+.oscars .rubrique-oscars .texte-oscars {
+	background-image: url("./assets/images/Rectangle 23.png");
+}
+
+.site-footer {
+    flex-direction: column;
+}
+
+.texte-oscars {
+    padding: 3em 3em;
+}
+
+.rubrique-oscars {
+    display: flex;
+    align-items: center;
+}
+
+.oscars {
+    margin-bottom: 250px;
+}
+
