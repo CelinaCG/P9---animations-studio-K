@@ -1,8 +1,8 @@
-<section>
-    <div class="oscar-section">
-        <h3 class="oscar-texte">Fleurs d'orangers et chats errants est nominé aux Oscars Short Film Animated de 2022 !</h3>
+<section class="oscars">
+    <div class="rubrique-oscars">
+        <h3 class="texte-oscars">Fleurs d'orangers et chats errants est nominé aux Oscars Short Film Animated de 2023 !</h3>
         
-        <img src="<?php echo get_stylesheet_directory_uri().'/assets/images/oscar-icon.png';?>"></img>
+        <img src="<?php echo get_stylesheet_directory_uri().'/assets/images/icone-oscars.png';?>"></img>
     </div>
     
 </section>
