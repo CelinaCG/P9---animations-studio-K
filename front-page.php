@@ -9,8 +9,7 @@ get_header();
         </section>
         <section id="#story" class="story">
             <!-- Classe pour séparer le titre et l'arrière-plan -->
-            
-                <h2><div class="animation-titre">L'histoire</div></h2>
+            <h2><div class="animation-titre">L'histoire</div></h2>
             
             
             <article id="" class="story__article">
@@ -66,7 +65,6 @@ get_header();
             <!-- Classe pour séparer le titre et l'arrière-plan -->
             
             <h2><div class="animation-titre">Studio Koukaki</div></h2>
-            
             
             <div>
                 <p>Acteur majeur de l’animation, Koukaki est un studio intégré fondé en 2012 qui créé, produit et distribue des programmes originaux dans plus de 190 pays pour les enfants et les adultes. Nous avons deux sections en activité : le long métrage et le court métrage. Nous développons des films fantastiques, principalement autour de la culture de notre pays natal, le Japon.</p>
