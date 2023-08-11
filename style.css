@@ -10,11 +10,11 @@
 */
 @keyframes rotation {
   from {
-    transform-origin: center;
+    transform-origin: center center;
     transform: rotate(0deg);
   }
   to {
-    transform-origin: center;
+    transform-origin: center center;
     transform: rotate(360deg);
   }
 }
@@ -46,7 +46,7 @@
   animation: rotation 3s linear infinite;
 }
 
-@keyframes fade-in {
+@keyframes fade-inHB {
   from {
     opacity: 0;
     transform: translate(0%, -100%);
@@ -57,7 +57,11 @@
   }
 }
 .banner {
-  animation: fade-in ease 3s;
+  animation: fade-inHB ease 3s;
+}
+
+.site-footer ul {
+  animation: fade-inBH ease 3s;
 }
 
 .animation-titre {
@@ -66,9 +70,9 @@
 
 @keyframes animation-titre {
   from {
-    transform: translate(0%, 0%);
+    transform: translate(0%, 100%);
   }
   to {
-    transform: translate(0%, -30%);
+    transform: translate(0%, -1%);
   }
 }/*# sourceMappingURL=style.css.map */
