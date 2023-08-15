@@ -140,23 +140,21 @@
 
 // Section Oscars
 
-.oscars {max-width: 1100px;}
-
-.oscars .rubrique-oscars .texte-oscars {
-	background-image: url("./assets/images/Rectangle 23.png");
-}
-
-.site-footer {
-    flex-direction: column;
+.oscars {
+    max-width: 1100px;
     display: flex;
     align-items: center;
 }
 
 .texte-oscars {
+	background-image: url("./assets/images/Rectangle 23.png");
     padding: 2em 2em;
+    text-align: left;
+    line-height: 52.5px;
 }
 
-.rubrique-oscars {
+.site-footer {
+    flex-direction: column;
     display: flex;
     align-items: center;
 }
