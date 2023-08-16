@@ -69,7 +69,7 @@
 
 .banner {
     animation: fade-inHB ease 3s;
-    
+    background-image: none;
 }
 
 // Tous les élements en dehors de la 1ère bannière (sauf les textes) ont un effet fade-in du bas vers le haut (Optionnel)
@@ -165,15 +165,25 @@
 
 // Vidéo bannière
 
-#background-video {
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
+// #background-video {
+//     height: 100vh;
+//     width: 100vw;
+//     object-fit: cover;
+//     // position: fixed;
+//     left: 0;
+//     right: 0;
+//     top: 0;
+//     bottom: 0;
+//     z-index: -1;
+// }
+
+// Logo
+
+.banner img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin-top: -10%;
+
 }
     
