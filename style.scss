@@ -23,33 +23,33 @@
 }
 
 .story h2::after {
-    animation: rotation 3s linear infinite;
+    animation: rotation 6s linear infinite;
 }
 
 .story__article::after {
-    animation: rotation 3s linear infinite;
+    animation: rotation 6s linear infinite;
 }
 
 #studio h2::before {
-    animation: rotation 3s linear infinite;
+    animation: rotation 6s linear infinite;
 }
 
 #studio h2::after {
-    animation: rotation 3s linear infinite;
+    animation: rotation 6s linear infinite;
 }
 
 .site-footer::before {
-    animation: rotation 3s linear infinite;
+    animation: rotation 6s linear infinite;
     top: 12em;
 }
  
 .site-footer::after {
-    animation: rotation 3s linear infinite;
-    bottom: 50.8em;
+    animation: rotation 6s linear infinite;
+    bottom: 48.8em;
 }
 
 .site-footer ul::after {
-    animation: rotation 3s linear infinite;
+    animation: rotation 6s linear infinite;
 }
 
 // Animation fade-in des sections
@@ -179,11 +179,37 @@
 
 // Logo
 
+// .logo {
+//     position: absolute;
+//     width: auto;
+//     height: auto;
+   
+// }
+
 .banner img {
     position: absolute;
     width: auto;
     height: auto;
-    margin-top: -10%;
-
 }
-    
+
+// Swiper
+
+.swiper {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+}
+
+.swiper-slide {
+background-position: center;
+background-size: cover;
+}
+
+.swiper-slide img {
+display: block;
+width: 100%;
+}
