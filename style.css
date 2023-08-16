@@ -60,6 +60,7 @@
 }
 .banner {
   animation: fade-inHB ease 3s;
+  background-image: none;
 }
 
 .animation-titre {
@@ -97,15 +98,9 @@
   margin-bottom: 250px;
 }
 
-#background-video {
-  height: 100vh;
-  width: 100vw;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
+.banner img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  margin-top: -10%;
 }/*# sourceMappingURL=style.css.map */
