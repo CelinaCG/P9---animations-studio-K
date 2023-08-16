@@ -4,17 +4,21 @@ get_header();
 ?>
 
     <main id="primary" class="site-main">
+        <!-- Vidéo -->
         <section class="banner">
-            <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
-            <!-- Vidéo -->
             <video id="background-video" autoplay loop muted>
-            <source src="/assets/videos/video-banniere.mp4" type="video/mp4"></video>
+            <source src="<?php echo get_stylesheet_directory_uri() . '/assets/videos/video-banniere.mp4'; ?>" type="video/mp4">
+            <!-- Appel du thème enfant via get_template_directory_uri -->
+            <img src="<?php echo get_template_directory_uri() . '/assets/images/banner.png'; ?> " alt="bannière">
+            </video>
 
+            <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
         </section>
+       
+        
         <section id="#story" class="story">
             <!-- Classe pour séparer le titre et l'arrière-plan -->
             <h2><div class="animation-titre">L'histoire</div></h2>
-            
             
             <article id="" class="story__article">
                 <p><?php echo get_theme_mod('story'); ?></p>
