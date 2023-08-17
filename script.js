@@ -5,15 +5,19 @@ var video = document.getElementById("background-video");
 // Initialize Swiper
 
 var swiper = new Swiper(".mySwiper", {
-    effect: "cube",
+    effect: "coverflow",
     grabCursor: true,
-    cubeEffect: {
-    shadow: true,
-    slideShadows: true,
-    shadowOffset: 20,
-    shadowScale: 0.94,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
     },
     pagination: {
-    el: ".swiper-pagination",
+        el: ".swiper-pagination",
     },
 });
+
