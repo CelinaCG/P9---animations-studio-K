@@ -59,7 +59,6 @@
   }
 }
 .banner {
-  animation: fade-inHB ease 3s;
   background-image: none;
 }
 
@@ -98,6 +97,24 @@
   margin-bottom: 250px;
 }
 
+.logo {
+  animation-name: flottement;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes flottement {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
 .banner img {
   position: absolute;
   width: auto;
