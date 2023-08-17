@@ -43,6 +43,7 @@ get_header();
                     // echo '<figcaption>'. $main_character->post_title . '</figcaption>';
                     // echo '</figure>';
                     // $characters_query->next_post();
+                    echo get_stylesheet_directory_uri();
                     get_template_part( 'template-parts/personnages', '' );
                     ?>
                 </div>
