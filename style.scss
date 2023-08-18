@@ -215,3 +215,20 @@ background-size: cover;
 display: block;
 width: 100%;
 }
+
+// Rubrique "Lieu"
+
+.story #place {
+    background-image: url("./assets/images/Studio_Koukaki-image_place.png");
+}
+
+// Animation nuages
+
+.cloud {
+    filter: blur(12px);
+}
+
+@keyframes cloudMove {
+    from{}
+    to{}
+}
