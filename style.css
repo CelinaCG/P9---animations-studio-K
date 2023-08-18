@@ -135,4 +135,14 @@
 .swiper-slide img {
   display: block;
   width: 100%;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.story #place {
+  background-image: url("./assets/images/Studio_Koukaki-image_place.png");
+}
+
+.cloud {
+  filter: blur(12px);
+}
+
+@keyframes cloudMove {}/*# sourceMappingURL=style.css.map */
