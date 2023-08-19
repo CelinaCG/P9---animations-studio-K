@@ -226,9 +226,24 @@ width: 100%;
 
 .cloud {
     filter: blur(12px);
+    margin-top: 80px;
+    width: 554px;
+    height: 238px;
+    animation: cloudMove 2s ease;
+}
+
+.small_cloud {
+    position: absolute;
+    bottom: 0;
+}
+
+.big_cloud {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 @keyframes cloudMove {
-    from{}
-    to{}
+    from{transform: translateX(0px) ;}
+    to{transform: translateX(-300px) ;}
 }
