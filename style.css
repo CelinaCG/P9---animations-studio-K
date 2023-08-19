@@ -143,6 +143,28 @@
 
 .cloud {
   filter: blur(12px);
+  margin-top: 80px;
+  width: 554px;
+  height: 238px;
+  animation: cloudMove 2s ease;
 }
 
-@keyframes cloudMove {}/*# sourceMappingURL=style.css.map */
+.small_cloud {
+  position: absolute;
+  bottom: 0;
+}
+
+.big_cloud {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@keyframes cloudMove {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-300px);
+  }
+}/*# sourceMappingURL=style.css.map */
