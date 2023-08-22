@@ -26,6 +26,20 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'foce' ); ?></a>
 
 	<header id="masthead" class="site-header">
-	<?php get_template_part('template-parts/menu', ''); ?>
+		<nav id="site-navigation" class="main-navigation">
+			<ul>
+				<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+				<a id="closeBtn" href="#" class="close">x</a>
+				<a href="#" id="openBtn">
+					<span class="burger-icon" >
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</span>
+				</a>
+			</ul>
+			
+		</nav>
 	</header><!-- #masthead -->
+	<?php get_template_part('template-parts/menu', ''); ?>
 </div>
