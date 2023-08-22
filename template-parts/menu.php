@@ -2,30 +2,22 @@
 
 <nav class="main-navigation">
     <ul>
-        <li class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
-        
         <div id="mySidenav" class="sidenav">
-        
-        <a id="closeBtn" href="#" class="close">x</a>
-    
-        <ul>
-            <li><a href="#story">Histoire</a></li>
-            <li><a href="#characters">Personnages</a></li>
-            <li class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
-            <li><a href="#place">Lieu</a></li>
-            <li><a href="#studio">Studio Koukaki</a></li>
-        </ul>
 
+            <ul>
+                <li><img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/petit_logo.png'; ?> " alt="bannière"></li>
+                <li class="burger-hover"><a href="#story">Histoire</a></li>
+                <li class="burger-hover"><a href="#characters">Personnages</a></li>
+                <li class="burger-hover"><a href="#place">Lieu</a></li>
+                <li class="burger-hover"><a href="#studio">Studio Koukaki</a></li>
+                
+
+            </ul>
+            <a href="#">STUDIO KOUKAKI</a>
         </div>
         
-        <a href="#" id="openBtn">
-        <span class="burger-icon" >
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-        </span>
-        </a>
+        
     </ul>
-
+    
 </nav>
 
