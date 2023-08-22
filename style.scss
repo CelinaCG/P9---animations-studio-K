@@ -207,13 +207,13 @@
 }
 
 .swiper-slide {
-background-position: center;
-background-size: cover;
+    background-position: center;
+    background-size: cover;
 }
 
 .swiper-slide img {
-display: block;
-width: 100%;
+    display: block;
+    width: 100%;
 }
 
 // Rubrique "Lieu"
@@ -255,13 +255,13 @@ width: 100%;
     position: fixed;
     z-index: 1;
     top: 111px;
-  
     background-color: #FFF5E9;
-    // padding-top: 60px;
+
     transition: left 0.5s ease;
   }
   
 /* Sidenav menu links */
+
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -308,4 +308,64 @@ width: 100%;
     background-color: black;
     margin: 6px 0;
 }
-  
+
+.burger-hover:hover {
+    text-shadow: #FF5C00 1px 0 10px;
+}
+
+.petit-logo::before {
+    content: url("./assets/images/orchid.png");
+	position: absolute;
+    left: -49em;
+    top: -5px;
+}
+
+.petit-logo::after {
+    content: url("./assets/images/Sunflower.png");
+    position: absolute;
+    top: 80px;
+    right: -420px;
+}
+
+.histoire::before {
+    content: url("./assets/images/chibi_Kawaneko.png");
+    position: absolute;
+    top: -40px;
+    left: -300px;
+}
+
+.histoire::after{
+    content: url("./assets/images/random_flower.png");
+    position: absolute;
+    // width: 75px;
+    // height: 75px;
+    right: -650px;
+}
+
+.lieu::before{
+    content: url("./assets/images/flower.png");
+    position: absolute;
+    top: -13px;
+    left: -500px;
+}
+
+.lieu::after{
+    content: url("./assets/images/chibi_Jaakuna.png");
+    position: absolute;
+    top: -13px;
+    left: 500px;
+}
+
+.studio::before{
+    content: url("./assets/images/chibi_Orenjiiro.png");
+    position: absolute;
+    top: -47px;
+    left: -419px;
+}
+
+.studio::after {
+    content: url("./assets/images/hibiscus_footer.png");
+    position: absolute;
+    right: -700px;
+    top: -61px;
+}
