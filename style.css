@@ -181,7 +181,6 @@
 
 /* Sidenav menu links */
 .sidenav a {
-  padding: 0px 0px 0px 32px;
   text-decoration: none;
   font-size: 25px;
   color: #000000;
@@ -190,7 +189,7 @@
   font-family: "roboto mono", sans-serif;
   font-weight: 400;
   font-size: 64px;
-  line-height: 84.41px;
+  line-height: 20px;
 }
 
 .sidenav a:hover {
@@ -282,6 +281,10 @@
 .studio::after {
   content: url("./assets/images/hibiscus_footer.png");
   position: absolute;
-  right: -700px;
-  top: -61px;
+  right: -835px;
+  top: -194px;
+}
+
+.main-navigation {
+  position: fixed;
 }/*# sourceMappingURL=style.css.map */
