@@ -235,6 +235,7 @@
   position: absolute;
   left: -49em;
   top: -5em;
+  animation: rotation 6s linear infinite;
 }
 
 .petit-logo::after {
@@ -242,6 +243,7 @@
   position: absolute;
   top: 1em;
   right: -30em;
+  animation: rotation 6s linear infinite;
 }
 
 .histoire::before {
@@ -249,6 +251,10 @@
   position: absolute;
   top: -16em;
   left: -23em;
+  animation-name: flottement;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .histoire::after {
@@ -256,6 +262,7 @@
   position: absolute;
   right: -47em;
   top: -10em;
+  animation: rotation 6s linear infinite;
 }
 
 .lieu::before {
@@ -263,6 +270,7 @@
   position: absolute;
   top: -16em;
   left: -31em;
+  animation: rotation 6s linear infinite;
 }
 
 .lieu::after {
@@ -270,6 +278,10 @@
   position: absolute;
   top: -16em;
   left: 32em;
+  animation-name: flottement;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .studio::before {
@@ -277,6 +289,10 @@
   position: absolute;
   top: -8em;
   left: -27em;
+  animation-name: flottement;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .studio::after {
@@ -284,6 +300,7 @@
   position: absolute;
   right: -56em;
   top: -16em;
+  animation: rotation 6s linear infinite;
 }
 
 .main-navigation {
