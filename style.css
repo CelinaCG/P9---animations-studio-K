@@ -173,15 +173,15 @@
   height: 100%;
   width: 1440px;
   position: fixed;
-  z-index: 1;
-  top: 111px;
+  z-index: 1000;
+  top: 80px;
   background-color: #FFF5E9;
   transition: left 0.5s ease;
 }
 
 /* Sidenav menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 0px 0px 0px 32px;
   text-decoration: none;
   font-size: 25px;
   color: #000000;
