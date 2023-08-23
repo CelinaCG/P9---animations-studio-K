@@ -234,55 +234,56 @@
   content: url("./assets/images/orchid.png");
   position: absolute;
   left: -49em;
-  top: -5px;
+  top: -5em;
 }
 
 .petit-logo::after {
   content: url("./assets/images/Sunflower.png");
   position: absolute;
-  top: 80px;
-  right: -420px;
+  top: 1em;
+  right: -30em;
 }
 
 .histoire::before {
   content: url("./assets/images/chibi_Kawaneko.png");
   position: absolute;
-  top: -40px;
-  left: -300px;
+  top: -16em;
+  left: -23em;
 }
 
 .histoire::after {
   content: url("./assets/images/random_flower.png");
   position: absolute;
-  right: -650px;
+  right: -47em;
+  top: -10em;
 }
 
 .lieu::before {
   content: url("./assets/images/flower.png");
   position: absolute;
-  top: -13px;
-  left: -500px;
+  top: -16em;
+  left: -31em;
 }
 
 .lieu::after {
   content: url("./assets/images/chibi_Jaakuna.png");
   position: absolute;
-  top: -13px;
-  left: 500px;
+  top: -16em;
+  left: 32em;
 }
 
 .studio::before {
   content: url("./assets/images/chibi_Orenjiiro.png");
   position: absolute;
-  top: -47px;
-  left: -419px;
+  top: -8em;
+  left: -27em;
 }
 
 .studio::after {
   content: url("./assets/images/hibiscus_footer.png");
   position: absolute;
-  right: -835px;
-  top: -194px;
+  right: -56em;
+  top: -16em;
 }
 
 .main-navigation {
