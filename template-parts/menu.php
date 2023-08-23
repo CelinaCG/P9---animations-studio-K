@@ -1,6 +1,6 @@
 <!-- Menu burger -->
 
-<nav class="main-navigation">
+<nav class="main-navigation burger">
     <ul>
         <div id="mySidenav" class="sidenav">
 
