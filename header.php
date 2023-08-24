@@ -29,14 +29,16 @@
 		<nav id="site-navigation" class="main-navigation">
 			
 			<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-			<a id="closeBtn" href="#" class="close">x</a>
-			<a href="#" id="openBtn">
+			<img class="croix_burger" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/burger_croix.png' ?>">
+			<img id="button-menu" class="menu_burger" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/burger.png' ?>">
+			<!-- <a id="closeBtn" href="#" class="close">x</a> -->
+			<!-- <a href="#" id="openBtn">
 				<span class="burger-icon" >
 					<span class="line"></span>
 					<span class="line"></span>
 					<span class="line"></span>
 				</span>
-			</a>
+			</a> -->
 			
 			
 		</nav>
