@@ -27,17 +27,17 @@
 
 	<header id="masthead" class="site-header">
 		<nav id="site-navigation" class="main-navigation">
-			<ul>
-				<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-				<a id="closeBtn" href="#" class="close">x</a>
-				<a href="#" id="openBtn">
-					<span class="burger-icon" >
-						<span class="line"></span>
-						<span class="line"></span>
-						<span class="line"></span>
-					</span>
-				</a>
-			</ul>
+			
+			<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+			<a id="closeBtn" href="#" class="close">x</a>
+			<a href="#" id="openBtn">
+				<span class="burger-icon" >
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</span>
+			</a>
+			
 			
 		</nav>
 	</header><!-- #masthead -->
