@@ -6,8 +6,14 @@ get_header();
     <main id="primary" class="site-main">
         <!-- Vidéo -->
         <section class="banner">
+            <!-- Parallaxe de la vidéo -->
+            <div style="position:relative; width:100%; height:500px; overflow:hidden;">
+             
             <video id="background-video" autoplay loop muted>
-            <source src="<?php echo get_stylesheet_directory_uri() . '/assets/videos/video-banniere.mp4'; ?>" type="video/mp4">
+            <source src="<?php echo get_stylesheet_directory_uri() . '/assets/videos/video-banniere.mp4'; ?>" type="video/mp4"
+            style="position: absolute;" data-bottom-top="transform:translate3d(0, 0px, 0)" data-top-bottom="transform:translate3d(0, -200px, 0)">
+            </div>
+
             <!-- Appel du thème enfant via get_template_directory_uri -->
             <img src="<?php echo get_template_directory_uri() . '/assets/images/banner.png'; ?> " alt="bannière">
             </video>
@@ -68,6 +74,13 @@ get_header();
             </div>
             </section>
     </main><!-- #main -->
+
+    <!-- Script Parallaxe Skrollr -->
+
+    <script type="text/javascript" src="skrollr.min.js"></script>
+	<script type="text/javascript">
+	var s = skrollr.init();
+	</script>
 
 <?php
 get_footer();
