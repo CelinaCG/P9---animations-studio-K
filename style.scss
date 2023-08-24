@@ -263,7 +263,6 @@
 /* Sidenav menu links */
 
 .sidenav a {
-    // padding: 0px 0px 0px 0px;
     text-decoration: none;
     font-size: 25px;
     color: #000000;
@@ -272,7 +271,6 @@
     font-family:'roboto mono', sans-serif;
     font-weight: 400;
     font-size: 64px;
-    // line-height: 20px;
     animation: animation-titre 1s ease;
 }
 
@@ -283,9 +281,10 @@
 .sidenav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 /* Active class */
@@ -317,24 +316,24 @@
 .petit-logo::before {
     content: url("./assets/images/orchid.png");
 	position: absolute;
-    left: -49em;
-    top: -5em;
+    left: -5em;
+    top: 7em;
     animation: rotation 6s linear infinite;
 }
 
 .petit-logo::after {
     content: url("./assets/images/Sunflower.png");
     position: absolute;
-    top: 1em;
-    right: -30em;
+    top: 13em;
+    right: 19em;
     animation: rotation 6s linear infinite;
 }
 
 .histoire::before {
     content: url("./assets/images/chibi_Kawaneko.png");
     position: absolute;
-    top: -16em;
-    left: -23em;
+    top: 15em;
+    left: 18em;
     animation-name: flottement;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -342,28 +341,26 @@
 }
 
 .histoire::after{
-    content: url("./assets/images/random_flower.png");
+    content: url("./assets/images/little_flower.png");
     position: absolute;
-    // width: 75px;
-    // height: 75px;
-    right: -47em;
-    top: -10em;
+    right: 4em;
+    top: 32em;
     animation: rotation 6s linear infinite;
 }
 
 .lieu::before{
-    content: url("./assets/images/flower.png");
+    content: url("./assets/images/little_orange_flower.png");
     position: absolute;
-    top: -16em;
-    left: -31em;
+    top: 36em;
+    left: 13em;
     animation: rotation 6s linear infinite;
 }
 
 .lieu::after{
     content: url("./assets/images/chibi_Jaakuna.png");
     position: absolute;
-    top: -16em;
-    left: 32em;
+    top: 35em;
+    right: 18em;
     animation-name: flottement;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -373,8 +370,8 @@
 .studio::before{
     content: url("./assets/images/chibi_Orenjiiro.png");
     position: absolute;
-    top: -8em;
-    left: -27em;
+    top: 54em;
+    left: 5em;
     animation-name: flottement;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -384,17 +381,27 @@
 .studio::after {
     content: url("./assets/images/hibiscus_footer.png");
     position: absolute;
-    right: -56em;
-    top: -16em;
+    top: 47em;
+    left: 73em;
     animation: rotation 6s linear infinite;
 }
 
 .main-navigation {
     position: fixed;
+    width: 1440px;
 }
 
-// .sidenav li {
-//     padding: 0px;
-// }
+.sidenav li {
+    padding: 20px;
+}
 
-// .burger {display:none;}
+.burger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.koukaki-menu {
+    font-size: 10px;
+    margin-top: 100px;
+}
