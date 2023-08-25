@@ -25,17 +25,15 @@ openBtn.addEventListener('click', function(){
   // Ajout du style pour modifier propriétés du style de la classe et permettre la bascule du display "none" à "flex".
   document.querySelector('.burger').style.display="flex";
   // Si click sur la croix, faire disparaitre le menu
-  // document.querySelector('#site-navigation').classList.remove('.menu_burger');
-
+ 
 
 });
 
 // Fermeture menu burger
 closeBtn.addEventListener('click', function(){
-  // document.querySelector('#site-navigation').classList.toggle('.croix_burger');
-  document.classList.remove.querySelector('.burger');
   
-  // document.querySelector('#site-navigation').classList.remove('.menu_burger');
+  document.querySelector('.burger').style.display="none";
+  
 });
 
 /* Largeur 1440px */
