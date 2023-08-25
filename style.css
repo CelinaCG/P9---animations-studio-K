@@ -317,7 +317,13 @@
 }
 
 .image-burger {
-  display: contents;
+  position: absolute;
+  right: 10em;
+}
+
+.site-title {
+  display: flex;
+  position: fixed;
 }
 
 .sidenav li {
