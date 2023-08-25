@@ -97,6 +97,10 @@
   margin-bottom: 250px;
 }
 
+#background-video {
+  overflow: scroll;
+}
+
 .logo {
   animation-name: flottement;
   animation-duration: 2s;
