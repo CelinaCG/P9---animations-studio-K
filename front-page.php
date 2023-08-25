@@ -7,11 +7,8 @@ get_header();
         <!-- Vidéo -->
         <section class="banner">
             <!-- Parallaxe de la vidéo -->
-            <div style="position:relative; width:100%; height:500px; overflow:hidden;">
-             
             <video id="background-video" autoplay loop muted>
-            <source src="<?php echo get_stylesheet_directory_uri() . '/assets/videos/video-banniere.mp4'; ?>" type="video/mp4"
-            style="position: absolute;" data-bottom-top="transform:translate3d(0, 0px, 0)" data-top-bottom="transform:translate3d(0, -200px, 0)">
+            <source src="<?php echo get_stylesheet_directory_uri() . '/assets/videos/video-banniere.mp4'; ?>" type="video/mp4">
             </div>
 
             <!-- Appel du thème enfant via get_template_directory_uri -->
@@ -77,10 +74,20 @@ get_header();
 
     <!-- Script Parallaxe Skrollr -->
 
-    <script type="text/javascript" src="skrollr.min.js"></script>
+    <!-- <script type="text/javascript" src="skrollr.min.js"></script>
 	<script type="text/javascript">
 	var s = skrollr.init();
-	</script>
+	</script> -->
+
+    <!-- Parallaxe vidéo -->
+    <script>
+    document.querySelector("#background-video").addEventListener("scroll", videoScroll);
+
+    function videoScroll() {
+    document.querySelector("#background-video");
+    }
+</script>
+
 
 <?php
 get_footer();
