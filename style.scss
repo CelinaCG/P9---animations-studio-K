@@ -394,7 +394,16 @@
     justify-content: center;
     align-items: center;
 }
-.image-burger {display:contents;}
+.image-burger {
+    // display:contents;
+    position: absolute;
+    right: 10em;
+}
+
+.site-title {
+    display: flex;
+    position: fixed;
+}
 
 .sidenav li {
     padding: 20px;
