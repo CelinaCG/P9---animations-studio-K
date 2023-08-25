@@ -390,7 +390,11 @@
 .main-navigation {
     position: fixed;
     width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.image-burger {display:contents;}
 
 .sidenav li {
     padding: 20px;
