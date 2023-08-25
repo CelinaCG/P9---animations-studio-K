@@ -5,7 +5,7 @@ function theme_enqueue_styles() {
     // Appel style du thème enfant
     wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/style.css');
     // Mon code: ajout fichier JS
-    wp_enqueue_script( 'script', get_stylesheet_directory_uri() . '/script.js');
+    wp_enqueue_script('script', get_stylesheet_directory_uri() . '/script.js','','1.0',true);
     // Link Swiper's CSS et JS
     wp_enqueue_style('stylesheet','https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
     wp_enqueue_script('script-swiper','https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js');
