@@ -9,7 +9,7 @@ get_header();
             <!-- Parallaxe de la vidéo -->
             <video id="background-video" autoplay loop muted>
             <source src="<?php echo get_stylesheet_directory_uri() . '/assets/videos/video-banniere.mp4'; ?>" type="video/mp4">
-            </div>
+            
 
             <!-- Appel du thème enfant via get_template_directory_uri -->
             <img src="<?php echo get_template_directory_uri() . '/assets/images/banner.png'; ?> " alt="bannière">
