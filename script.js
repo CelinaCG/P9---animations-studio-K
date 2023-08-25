@@ -25,14 +25,19 @@ openBtn.addEventListener('click', function(){
   // Ajout du style pour modifier propriétés du style de la classe et permettre la bascule du display "none" à "flex".
   document.querySelector('.burger').style.display="flex";
   // Si click sur la croix, faire disparaitre le menu
+  document.querySelector('.menu_burger').style.display="none";
  
 
 });
 
 // Fermeture menu burger
 closeBtn.addEventListener('click', function(){
-  
+  // Disparition du menu déroulant
   document.querySelector('.burger').style.display="none";
+  // Disparition de l'image de la croix
+  document.querySelector('.croix_burger').style.display="none";
+  // Apparition de l'image du menu burger
+  document.querySelector('.menu_burger').style.display="flex";
   
 });
 
