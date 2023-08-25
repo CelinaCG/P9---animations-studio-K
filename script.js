@@ -5,7 +5,7 @@ var video = document.querySelector('#background-video');
 // Menu burger
 
 var sidenav = document.querySelector('#mySidenav');
-wp_enqueue_script('script', get_stylesheet_directory_uri() . '/script.js','','1.0',true);
+
 // var closeBtn = document.getElementById('closeBtn');
 var openBtn = document.querySelector('.menu_burger');
 var closeBtn = document.querySelector('.croix_burger');
