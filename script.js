@@ -26,6 +26,8 @@ openBtn.addEventListener('click', function(){
   document.querySelector('.burger').style.display="flex";
   // Si click sur la croix, faire disparaitre le menu
   document.querySelector('.menu_burger').style.display="none";
+  // Apparition de la croix
+  document.querySelector('.croix_burger').style.display="flex";
  
 
 });
