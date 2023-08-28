@@ -336,11 +336,11 @@
   align-items: center;
 }
 
+.croix_burger {
+  display: none;
+}
+
 .koukaki-menu {
   font-size: 10px;
   margin-top: 100px;
-}
-
-.titreH2 {
-  height: 200vh;
 }/*# sourceMappingURL=style.css.map */
