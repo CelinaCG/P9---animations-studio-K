@@ -51,6 +51,20 @@ closeBtn.addEventListener('click', function(){
 //   sidenav.classList.remove('active');
 // }
 
+// Scroll
+
+// Titres
+
+const titreH2 = document.querySelector('animation-titre');
+
+// window.addEventListener("scroll", () => {
+  // const scrollY = window.scrollY;
+  // Vitesse de l'animation
+  // const translateY = scrollY * 0.5;
+
+  // titreH2.style.transform = `translateY(${translateY}px)`;
+  // document.querySelector('animation-titre').style.transform = `translateY(${translateY}px)`;
+// });
 
 
 
