@@ -71,18 +71,41 @@ const titreH2 = document.querySelector('animation-titre');
 // Nuages
 
 // Appel de la classe des nuages
-const image = document.querySelector(".cloud");
-// Ajout évènement de scroll via la constante scrollY
-window.addEventListener("scroll", () => {
-  const scrollY = window.scrollY;
-  const translateX = -300;
-  // Activation de l'effet de scroll si ce dernier est entre les 2 valeurs de la section "lieu". Sinon, pas effet de scroll.
-  if (scrollY > 2010  && scrollY < 2709){
-    image.classList.add('cloud-animation-active')
-  }else{
-    image.classList.remove('cloud-animation-active')
-  }
+// const image = document.querySelector(".cloud");
+// // Ajout évènement de scroll via la constante scrollY
+// window.addEventListener("scroll", () => {
+//   const scrollY = window.scrollY;
+//   const translateX = -300;
+//   // Activation de l'effet de scroll si ce dernier est entre les 2 valeurs de la section "lieu". Sinon, pas effet de scroll.
+//   if (scrollY > 2010  && scrollY < 2709){
+//     image.classList.add('cloud-animation-active')
+//   }else{
+//     image.classList.remove('cloud-animation-active')
+//   }
+// });
+
+// Experimentation Observer
+
+// Créer l'Observer
+const observer = new IntersectionObserver(entries => {
+  // Lecture des entrées
+  entries.forEach(entry => {
+    const nuage = entry.target.querySelector('.cloud');
+    // 'entry' est l'objet donné à nous par l'Observer
+    if(entry.isIntersecting) {
+      // Animation quand c'est visible
+      nuage.classList.add('cloud-animation');
+      return;
+    }
+    // Si pas d'aperçu de l'Observer, ne pas faire d'animation
+    nuage.classList.remove('cloud-animation');
+  });
 });
+
+// Tell the observer which elements to track
+observer.observe(document.querySelector('.cloud-wrapper'));
+
+
 
 
 
