@@ -24,7 +24,7 @@ let logo = document.querySelector('.petit-logo');
 openBtn.addEventListener('click', function(){
   // Ajout du style pour modifier propriétés du style de la classe et permettre la bascule du display "none" à "flex".
   document.querySelector('.burger').style.display="flex";
-  // Si click sur la croix, faire disparaitre le menu
+  // Disparition du menu burger
   document.querySelector('.menu_burger').style.display="none";
   // Apparition de la croix
   document.querySelector('.croix_burger').style.display="flex";
@@ -67,6 +67,22 @@ const titreH2 = document.querySelector('animation-titre');
   // titreH2.style.transform = `translateY(${translateY}px)`;
   // document.querySelector('animation-titre').style.transform = `translateY(${translateY}px)`;
 // });
+
+// Nuages
+
+// Appel de la classe des nuages
+const image = document.querySelector(".cloud");
+// Ajout évènement de scroll via la constante scrollY
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+  const translateX = -300;
+  // Activation de l'effet de scroll si ce dernier est entre les 2 valeurs de la section "lieu". Sinon, pas effet de scroll.
+  if (scrollY > 2010  && scrollY < 2709){
+    image.classList.add('cloud-animation-active')
+  }else{
+    image.classList.remove('cloud-animation-active')
+  }
+});
 
 
 
