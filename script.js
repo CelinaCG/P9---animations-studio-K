@@ -5,20 +5,10 @@ var video = document.querySelector('#background-video');
 // Menu burger
 
 var sidenav = document.querySelector('#mySidenav');
-
-// var closeBtn = document.getElementById('closeBtn');
 var openBtn = document.querySelector('.menu_burger');
 var closeBtn = document.querySelector('.croix_burger');
-
-
 let logo = document.querySelector('.petit-logo');
-// openBtn.onclick = openNav;
-// closeBtn.onclick = closeNav;
 
-// logo.addEventListener('click', function() {
-//   console.log('Test');
-
-// });
 
 // Ouverture menu burger
 openBtn.addEventListener('click', function(){
@@ -42,16 +32,6 @@ closeBtn.addEventListener('click', function(){
   document.querySelector('.menu_burger').style.display="flex";
   
 });
-
-/* Largeur 1440px */
-// function openNav() {
-//   sidenav.classList.add('active');
-// }
-
-/* Set the width of the side navigation to 0 */
-// function closeNav() {
-//   sidenav.classList.remove('active');
-// }
 
 // Scroll
 
@@ -86,24 +66,55 @@ closeBtn.addEventListener('click', function(){
 
 // Experimentation Observer
 
+// Nuages
+
 // Créer l'Observer
 const observer = new IntersectionObserver(entries => {
   // Lecture des entrées
   entries.forEach(entry => {
     const nuage = entry.target.querySelector('.cloud');
+    const titre = entry.target.querySelector('.title-wrapper');
     // 'entry' est l'objet donné à nous par l'Observer
     if(entry.isIntersecting) {
       // Animation quand c'est visible
       nuage.classList.add('cloud-animation');
+      titre.classList.add('animation-titre');
       return;
     }
     // Si pas d'aperçu de l'Observer, ne pas faire d'animation
     nuage.classList.remove('cloud-animation');
+    titre.classList.remove('animation-titre');
   });
 });
 
 // Tell the observer which elements to track
 observer.observe(document.querySelector('.cloud-wrapper'));
+observer.observe(document.querySelector('.title-wrapper'));
+
+// Titres
+
+// // Créer l'Observer
+// const observer = new IntersectionObserver(entries => {
+//   // Lecture des entrées
+//   entries.forEach(entry => {
+   
+//     const titre = entry.target.querySelector('.titre-wrapper');
+//     // 'entry' est l'objet donné à nous par l'Observer
+//     if(entry.isIntersecting) {
+//       // Animation quand c'est visible
+      
+//       titre.classList.add('animation-titre');
+//       return;
+//     }
+//     // Si pas d'aperçu de l'Observer, ne pas faire d'animation
+    
+//     titre.classList.remove('animation-titre');
+//   });
+// });
+
+// // Tell the observer which elements to track
+// observer.observe(document.querySelector('.titre-wrapper'));
+
 
 
 
