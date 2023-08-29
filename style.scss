@@ -229,7 +229,7 @@
     margin-top: 80px;
     width: 554px;
     height: 238px;
-    animation: cloudMove 2s ease;
+    // animation: cloudMove 2s ease;
 }
 
 .small_cloud {
@@ -343,7 +343,7 @@
 .histoire::after{
     content: url("./assets/images/little_flower.png");
     position: absolute;
-    right: 4em;
+    right: -1em;
     top: 32em;
     animation: rotation 6s linear infinite;
 }
@@ -410,7 +410,6 @@
 .burger {
     // non affichage temporaire
     display: none;
-    // display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -434,5 +433,10 @@
 //     height: 200vh;
 // }
 
+// Nuages
+
+.cloud-animation {
+    animation: cloudMove 2s ease;
+}
 
 
