@@ -57,7 +57,7 @@ closeBtn.addEventListener('click', function(){
 
 // Titres
 
-const titreH2 = document.querySelector('animation-titre');
+// const titreH2 = document.querySelector('animation-titre');
 
 // window.addEventListener("scroll", () => {
   // const scrollY = window.scrollY;
