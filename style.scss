@@ -8,7 +8,11 @@
  Version: 0.1
 */
 
-// Fleurs: Rotation 360
+// Fleurs: Rotation 
+
+:root {
+    --o-animation-duration: 15s;
+}
 
 @keyframes rotation {
     from {
@@ -23,33 +27,33 @@
 }
 
 .story h2::after {
-    animation: rotation 6s linear infinite;
+    animation: rotation var(--o-animation-duration) linear infinite;
 }
 
 .story__article::after {
-    animation: rotation 6s linear infinite;
+    animation: rotation var(--o-animation-duration) linear infinite;
 }
 
 #studio h2::before {
-    animation: rotation 6s linear infinite;
+    animation: rotation var(--o-animation-duration) linear infinite;
 }
 
 #studio h2::after {
-    animation: rotation 6s linear infinite;
+    animation: rotation var(--o-animation-duration) linear infinite;
 }
 
 .site-footer::before {
-    animation: rotation 6s linear infinite;
+    animation: rotation var(--o-animation-duration) linear infinite;
     top: 12em;
 }
  
 .site-footer::after {
-    animation: rotation 6s linear infinite;
+    animation: rotation var(--o-animation-duration) linear infinite;
     bottom: 48.8em;
 }
 
 .site-footer ul::after {
-    animation: rotation 6s linear infinite;
+    animation: rotation var(--o-animation-duration) linear infinite;
 }
 
 // Animation fade-in des sections
