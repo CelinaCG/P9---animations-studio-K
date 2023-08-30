@@ -100,15 +100,14 @@ observer_studio.observe(document.querySelector('.studio-wrapper'));
 
 // Rotation des fleurs
 
-const rotation_fleur = document.querySelector('');
+const rotation_fleur = document.querySelector(':root');
 
 window.addEventListener("scroll", () => {
   const tourne_fleur = window.tourne_fleur;
   // Vitèsse de l'animation
   const vitesse_rotation = tourne_fleur* 0.5;
 
-  // rotation_fleur.style.transform = `translateY(${translateY}px)`;
-  // document.querySelector('').style.transform = `translateY(${translateY}px)`;
+  rotation_fleur.style.transform = `${vitesse_rotation}`;
 });
 
 
