@@ -100,14 +100,14 @@ observer_studio.observe(document.querySelector('.studio-wrapper'));
 
 // Rotation des fleurs
 
-const rotation_fleur = document.querySelector(':root');
+const rotation_fleur = document.querySelector('--o-animation-duration');
 
 window.addEventListener("scroll", () => {
-  const tourne_fleur = window.tourne_fleur;
+  // const tourne_fleur = window.tourne_fleur;
   // Vitèsse de l'animation
-  const vitesse_rotation = tourne_fleur* 0.5;
-
-  rotation_fleur.style.transform = `${vitesse_rotation}`;
+  // const vitesse_rotation = tourne_fleur* 0.5;
+  var vitesse_rotation = document.styleSheets[0].cssRules[0].style;
+  var rotation_fleur = vitesse_rotation.setProperty('--o-animation-duration', '2s');
 });
 
 
