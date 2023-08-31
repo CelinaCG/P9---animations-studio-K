@@ -125,7 +125,7 @@ window.addEventListener('scroll', function(){
   }, 150
   );
 });
-root.style.setProperty('--speed', '15s');
+root.style.setProperty('--o-animation-duration', '15s');
 
 
 
