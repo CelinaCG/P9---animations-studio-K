@@ -14,11 +14,9 @@
 
 @keyframes rotation {
   from {
-    transform-origin: 50% 50%;
     transform: rotate(0deg);
   }
   to {
-    transform-origin: 50% 50%;
     transform: rotate(360deg);
   }
 }
@@ -99,10 +97,6 @@
 
 .oscars {
   margin-bottom: 250px;
-}
-
-#background-video {
-  overflow: scroll;
 }
 
 .logo {
@@ -210,19 +204,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-/* Active class */
-.sidenav.active {
-  left: 0;
-}
-
-/* Close btn */
-.sidenav .close {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
 }
 
 /* Icône burger */
