@@ -16,12 +16,10 @@
 
 @keyframes rotation {
     from {
-        transform-origin: 50% 50%;
         transform: rotate(0deg);
       
     }
     to {
-        transform-origin : 50% 50%;
         transform: rotate(360deg);
     }
 }
@@ -168,8 +166,8 @@
 
 // Vidéo bannière
 
-#background-video {
-    overflow: scroll;
+// #background-video {
+//     overflow: scroll;
 //     height: 100vh;
 //     width: 100vw;
 //     object-fit: cover;
@@ -179,7 +177,7 @@
 //     top: 0;
 //     bottom: 0;
 //     z-index: -1;
-}
+// }
 
 // Logo
 
@@ -233,7 +231,6 @@
     margin-top: 80px;
     width: 554px;
     height: 238px;
-    // animation: cloudMove 2s ease;
 }
 
 .small_cloud {
@@ -248,8 +245,8 @@
 }
 
 @keyframes cloudMove {
-    from{transform: translateX(0px) ;}
-    to{transform: translateX(-300px) ;}
+    from{transform: translateX(0px);}
+    to{transform: translateX(-300px);}
 }
 
 /* Sidenav menu */
@@ -260,9 +257,8 @@
     z-index: 1000;
     top: 80px;
     background-color: #FFF5E9;
-
     transition: left 0.5s ease;
-  }
+}
   
 /* Sidenav menu links */
 
@@ -291,18 +287,18 @@
     align-items: center;
 }
 
-/* Active class */
-.sidenav.active {
-    left: 0;
-}
+// /* Active class */
+// .sidenav.active {
+//     left: 0;
+// }
   
-/* Close btn */
-.sidenav .close {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-}
+// /* Close btn */
+// .sidenav .close {
+//     position: absolute;
+//     top: 0;
+//     right: 25px;
+//     font-size: 36px;
+// }
 
 /* Icône burger */
 .burger-icon span {
@@ -397,6 +393,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .image-burger {
     position: absolute;
     right: 10em;
@@ -428,12 +425,6 @@
 }
 
 // Scroll
-
-// Titres
-
-// .titreH2 {
-//     height: 200vh;
-// }
 
 // Nuages
 
