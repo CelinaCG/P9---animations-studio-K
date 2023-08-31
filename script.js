@@ -100,17 +100,7 @@ observer_studio.observe(document.querySelector('.studio-wrapper'));
 
 // Rotation des fleurs
 
-// const rotation_fleur = document.querySelector('--o-animation-duration');
-
-// window.addEventListener("scroll", () => {
-//   // const tourne_fleur = window.tourne_fleur;
-//   // Vitèsse de l'animation
-//   // const vitesse_rotation = tourne_fleur* 0.5;
-//   var vitesse_rotation = document.styleSheets[0].cssRules[0].style;
-//   var rotation_fleur = vitesse_rotation.setProperty('--o-animation-duration', '2s');
-// });
-
-// Selection de la valeur de la vitèsse dans la classe :root
+// Selection de la valeur de la vitèsse d'animation dans la classe :root
 var root = document.querySelector(':root');
 
 var timer = null;
@@ -118,6 +108,7 @@ window.addEventListener('scroll', function(){
   // Si la durée est strictement inégale à rien (null) renvoie false
   if(timer !== null) {
     this.clearTimeout(timer);
+    // ClearTimeout remet à 0 la variable 'timer'.
     root.style.setProperty('--o-animation-duration', '2s');
   }
   timer = this.setTimeout(function(){
