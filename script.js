@@ -30,6 +30,7 @@ closeBtn.addEventListener('click', function(){
   document.querySelector('.croix_burger').style.display="none";
   // Apparition de l'image du menu burger
   document.querySelector('.menu_burger').style.display="flex";
+
   
 });
 
@@ -118,6 +119,52 @@ window.addEventListener('scroll', function(){
 });
 root.style.setProperty('--o-animation-duration', '15s');
 
+// Bonus: fermeture du menu lors du clic sur une rubrique
+
+var histoire = document.querySelector('.histoire');
+var personnage = document.querySelector('.perso');
+var lieu = document.querySelector('.lieu');
+var studio = document.querySelector('.studio');
+
+// Fermeture menu burger
+histoire.addEventListener('click', function(){
+  // Disparition du menu déroulant
+  document.querySelector('.burger').style.display="none";
+  // Disparition de l'image de la croix
+  document.querySelector('.croix_burger').style.display="none";
+  // Apparition de l'image du menu burger
+  document.querySelector('.menu_burger').style.display="flex";
+});
+
+// Fermeture menu burger
+perso.addEventListener('click', function(){
+  // Disparition du menu déroulant
+  document.querySelector('.burger').style.display="none";
+  // Disparition de l'image de la croix
+  document.querySelector('.croix_burger').style.display="none";
+  // Apparition de l'image du menu burger
+  document.querySelector('.menu_burger').style.display="flex";
+});
+
+// Fermeture menu burger
+lieu.addEventListener('click', function(){
+  // Disparition du menu déroulant
+  document.querySelector('.burger').style.display="none";
+  // Disparition de l'image de la croix
+  document.querySelector('.croix_burger').style.display="none";
+  // Apparition de l'image du menu burger
+  document.querySelector('.menu_burger').style.display="flex";
+});
+
+// Fermeture menu burger
+studio.addEventListener('click', function(){
+  // Disparition du menu déroulant
+  document.querySelector('.burger').style.display="none";
+  // Disparition de l'image de la croix
+  document.querySelector('.croix_burger').style.display="none";
+  // Apparition de l'image du menu burger
+  document.querySelector('.menu_burger').style.display="flex";
+});
 
 
 
