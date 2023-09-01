@@ -24,6 +24,10 @@
   animation: rotation var(--o-animation-duration) linear infinite;
 }
 
+.story h2::after {
+  animation: rotation var(--o-animation-duration) linear infinite;
+}
+
 .story__article::after {
   animation: rotation var(--o-animation-duration) linear infinite;
 }
@@ -50,16 +54,6 @@
   animation: rotation var(--o-animation-duration) linear infinite;
 }
 
-@keyframes fade-inHB {
-  from {
-    opacity: 0;
-    transform: translate(0%, -100%);
-  }
-  to {
-    opacity: 1;
-    transform: translate(0%, 0%);
-  }
-}
 .banner {
   background-image: none;
 }
@@ -181,7 +175,7 @@
   transition: left 0.5s ease;
 }
 
-/* Sidenav menu links */
+/* Sidenav liens menu */
 .sidenav a {
   text-decoration: none;
   font-size: 25px;
@@ -207,15 +201,7 @@
   align-items: center;
 }
 
-/* Icône burger */
-.burger-icon span {
-  display: block;
-  width: 35px;
-  height: 5px;
-  background-color: black;
-  margin: 6px 0;
-}
-
+/* Menu burger */
 .burger-hover:hover {
   text-shadow: #FF5C00 1px 0 10px;
 }
@@ -225,7 +211,7 @@
   position: absolute;
   left: -5em;
   top: 7em;
-  animation: rotation 6s linear infinite;
+  animation: rotation var(--o-animation-duration) linear infinite;
 }
 
 .petit-logo::after {
@@ -233,7 +219,7 @@
   position: absolute;
   top: 13em;
   right: 19em;
-  animation: rotation 6s linear infinite;
+  animation: rotation var(--o-animation-duration) linear infinite;
 }
 
 .histoire::before {
@@ -252,7 +238,7 @@
   position: absolute;
   right: -1em;
   top: 32em;
-  animation: rotation 6s linear infinite;
+  animation: rotation var(--o-animation-duration) linear infinite;
 }
 
 .lieu::before {
@@ -260,7 +246,7 @@
   position: absolute;
   top: 36em;
   left: 13em;
-  animation: rotation 6s linear infinite;
+  animation: rotation var(--o-animation-duration) linear infinite;
 }
 
 .lieu::after {
@@ -290,7 +276,7 @@
   position: absolute;
   top: 47em;
   left: 73em;
-  animation: rotation 6s linear infinite;
+  animation: rotation var(--o-animation-duration) linear infinite;
 }
 
 .main-navigation {
