@@ -24,104 +24,47 @@
     }
 }
 
-.story h2::after {
+@mixin animation-fleur {
     animation: rotation var(--o-animation-duration) linear infinite;
+}
+
+.story h2::after {
+    @include animation-fleur;
+}
+
+.story h2::after {
+    @include animation-fleur;
 }
 
 .story__article::after {
-    animation: rotation var(--o-animation-duration) linear infinite;
+    @include animation-fleur;
 }
 
 #studio h2::before {
-    animation: rotation var(--o-animation-duration) linear infinite;
+    @include animation-fleur;
 }
 
 #studio h2::after {
-    animation: rotation var(--o-animation-duration) linear infinite;
+    @include animation-fleur;
 }
 
 .site-footer::before {
-    animation: rotation var(--o-animation-duration) linear infinite;
+    @include animation-fleur;
     top: 12em;
 }
  
 .site-footer::after {
-    animation: rotation var(--o-animation-duration) linear infinite;
+    @include animation-fleur;
     bottom: 48.8em;
 }
 
 .site-footer ul::after {
-    animation: rotation var(--o-animation-duration) linear infinite;
-}
-
-// Animation fade-in des sections
-
-// Fade-in du haut vers le bas pour la 1ère bannière
-
-@keyframes fade-inHB {
-    from{
-        opacity: 0;
-        transform: translate(0%, -100%);
-    }
-    to{
-        opacity: 1;
-        transform: translate(0%, 0%);
-    }
+    @include animation-fleur;
 }
 
 .banner {
-    // animation: fade-inHB ease 3s;
     background-image: none;
 }
-
-// Tous les élements en dehors de la 1ère bannière (sauf les textes) ont un effet fade-in du bas vers le haut (Optionnel)
-
-// @keyframes fade-inBH {
-//     from{
-//         opacity: 0;
-//         transform: translate(0%, 0%);
-//     }
-//     to{
-//         opacity: 1;
-//         transform: translate(0%, -10%);
-//     }
-// }
-
-// .story {
-//     animation: fade-inBH ease 3s;
-// }
-
-// .story h2::after {
-//     animation: fade-inBH ease 3s;
-// }
-
-// .story__article::after {
-//     animation: fade-inBH ease 3s;
-// }
-
-// #studio h2::before {
-//     animation: fade-inBH ease 3s;
-// }
-
-// #studio h2::after {
-//     animation: fade-inBH ease 3s;
-// }
-
-// .site-footer::before {
-//     animation: fade-inBH ease 3s;
-// }
-
-// .site-footer::after {
-//     animation: fade-inBH ease 3s;
-// }
-
-// .site-footer ul::after {
-//     animation: fade-inBH ease 3s;
-// }
-
-// .site-footer ul {
-//     animation: fade-inBH ease 3s;
-// }
 
 
 // Animation titres
@@ -164,28 +107,17 @@
     margin-bottom: 250px;
 }
 
-// Vidéo bannière
-
-// #background-video {
-//     overflow: scroll;
-//     height: 100vh;
-//     width: 100vw;
-//     object-fit: cover;
-//     // position: fixed;
-//     left: 0;
-//     right: 0;
-//     top: 0;
-//     bottom: 0;
-//     z-index: -1;
-// }
-
 // Logo
 
-.logo {
+@mixin float {
     animation-name: flottement;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;    
+}
+
+.logo {
+    @include float;
     position: fixed;
 }
 
@@ -251,6 +183,7 @@
 }
 
 /* Sidenav menu */
+
 .sidenav {
     height: 100%;
     width: 1440px;
@@ -261,7 +194,7 @@
     transition: left 0.5s ease;
 }
   
-/* Sidenav menu links */
+/* Sidenav liens menu */
 
 .sidenav a {
     text-decoration: none;
@@ -288,27 +221,7 @@
     align-items: center;
 }
 
-// /* Active class */
-// .sidenav.active {
-//     left: 0;
-// }
-  
-// /* Close btn */
-// .sidenav .close {
-//     position: absolute;
-//     top: 0;
-//     right: 25px;
-//     font-size: 36px;
-// }
-
-/* Icône burger */
-.burger-icon span {
-    display: block;
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-}
+/* Menu burger */
 
 .burger-hover:hover {
     text-shadow: #FF5C00 1px 0 10px;
@@ -319,7 +232,7 @@
 	position: absolute;
     left: -5em;
     top: 7em;
-    animation: rotation 6s linear infinite;
+    @include animation-fleur;
 }
 
 .petit-logo::after {
@@ -327,7 +240,7 @@
     position: absolute;
     top: 13em;
     right: 19em;
-    animation: rotation 6s linear infinite;
+    @include animation-fleur;
 }
 
 .histoire::before {
@@ -335,10 +248,7 @@
     position: absolute;
     top: 15em;
     left: 18em;
-    animation-name: flottement;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    @include float;
 }
 
 .histoire::after{
@@ -346,7 +256,7 @@
     position: absolute;
     right: -1em;
     top: 32em;
-    animation: rotation 6s linear infinite;
+    @include animation-fleur;
 }
 
 .lieu::before{
@@ -354,7 +264,7 @@
     position: absolute;
     top: 36em;
     left: 13em;
-    animation: rotation 6s linear infinite;
+    @include animation-fleur;
 }
 
 .lieu::after{
@@ -362,10 +272,7 @@
     position: absolute;
     top: 35em;
     right: 18em;
-    animation-name: flottement;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    @include float;
 }
 
 .studio::before{
@@ -373,10 +280,7 @@
     position: absolute;
     top: 54em;
     left: 5em;
-    animation-name: flottement;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    @include float;
 }
 
 .studio::after {
@@ -384,7 +288,7 @@
     position: absolute;
     top: 47em;
     left: 73em;
-    animation: rotation 6s linear infinite;
+    @include animation-fleur;
 }
 
 .main-navigation {
