@@ -34,16 +34,6 @@
 				<img id="button-menu" class="menu_burger" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/burger.png' ?>">
 			</div>
 			
-			<!-- <a id="closeBtn" href="#" class="close">x</a> -->
-			<!-- <a href="#" id="openBtn">
-				<span class="burger-icon" >
-					<span class="line"></span>
-					<span class="line"></span>
-					<span class="line"></span>
-				</span>
-			</a> -->
-			
-			
 		</nav>
 	</header><!-- #masthead -->
 	<?php get_template_part('template-parts/menu', ''); ?>
