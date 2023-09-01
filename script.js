@@ -137,7 +137,7 @@ histoire.addEventListener('click', function(){
 });
 
 // Fermeture menu burger
-perso.addEventListener('click', function(){
+personnage.addEventListener('click', function(){
   // Disparition du menu déroulant
   document.querySelector('.burger').style.display="none";
   // Disparition de l'image de la croix
