@@ -70,6 +70,18 @@
     transform: translate(0%, 0%);
   }
 }
+.story {
+  animation: animation-section 6s ease;
+}
+
+@keyframes animation-section {
+  from {
+    transform: translate(0%, 100%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
 .oscars {
   max-width: 1100px;
   display: flex;
