@@ -82,6 +82,21 @@
     }
 }
 
+// Animation sections
+
+.story{animation: animation-section 6s ease;}
+
+@keyframes animation-section {
+    from{
+        transform: translate(0%, 100%) ;
+    }
+    to{
+        transform: translate(0%, 0%) ;
+    }
+}
+
+// .story__article p {position: fixed ;}
+
 // Section Oscars
 
 .oscars {
