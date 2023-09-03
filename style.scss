@@ -342,3 +342,21 @@
     right: 10em;
 }
 
+// Respoonsive
+
+@media all and (max-width: 700px) {
+
+    h2{font-size: 3em;}
+
+    h3{
+        font-size: 2em;
+        line-height: 24px;
+    }
+
+    .oscars {flex-direction: column;}
+
+    .texte-oscars{line-height: 25px;}
+
+    .site-footer{padding-top: 5em;}
+}
+
