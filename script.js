@@ -113,11 +113,11 @@ window.addEventListener('scroll', function(){
     root.style.setProperty('--o-animation-duration', '2s');
   }
   timer = this.setTimeout(function(){
-    root.style.setProperty('--o-animation-duration', '15s');
+    root.style.setProperty('--o-animation-duration', '8s');
   }, 150
   );
 });
-root.style.setProperty('--o-animation-duration', '15s');
+root.style.setProperty('--o-animation-duration', '8s');
 
 // Bonus: fermeture du menu lors du clic sur une rubrique
 
