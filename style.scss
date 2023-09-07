@@ -55,6 +55,8 @@
 .site-footer::before {
     @include animation-fleur;
     top: 12em;
+    height: 154px;
+    width: 154px;
 }
  
 .site-footer::after {
