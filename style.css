@@ -9,7 +9,7 @@
  Version: 0.1
 */
 :root {
-  --o-animation-duration: 15s;
+  --o-animation-duration: 8s;
 }
 
 @keyframes rotation {
@@ -22,22 +22,26 @@
 }
 .story h2::after {
   animation: rotation var(--o-animation-duration) linear infinite;
-}
-
-.story h2::after {
-  animation: rotation var(--o-animation-duration) linear infinite;
+  height: 154px;
+  width: 154px;
 }
 
 .story__article::after {
   animation: rotation var(--o-animation-duration) linear infinite;
+  height: 188px;
+  width: 188px;
 }
 
 #studio h2::before {
   animation: rotation var(--o-animation-duration) linear infinite;
+  height: 198.99px;
+  width: 202.25px;
 }
 
 #studio h2::after {
   animation: rotation var(--o-animation-duration) linear infinite;
+  height: 108.76px;
+  width: 108.76px;
 }
 
 .site-footer::before {
@@ -48,6 +52,8 @@
 .site-footer::after {
   animation: rotation var(--o-animation-duration) linear infinite;
   bottom: 48.8em;
+  height: 168.24px;
+  width: 172.57px;
 }
 
 .site-footer ul::after {
@@ -132,18 +138,10 @@
 
 .swiper {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
 }
 
 .swiper-slide img {
-  display: block;
-  width: 100%;
+  max-width: none;
 }
 
 .story #place {
@@ -335,6 +333,20 @@
 .cloud-wrapper {
   position: absolute;
   right: 10em;
+}
+
+#characters {
+  width: 100%;
+}
+
+h3 {
+  background-position: left;
+  text-align: left;
+  padding: 1em;
+}
+
+.main-character {
+  max-width: 1440px;
 }
 
 @media all and (max-width: 700px) {
