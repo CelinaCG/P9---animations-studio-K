@@ -47,6 +47,8 @@
 .site-footer::before {
   animation: rotation var(--o-animation-duration) linear infinite;
   top: 12em;
+  height: 154px;
+  width: 154px;
 }
 
 .site-footer::after {
