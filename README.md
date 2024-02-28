@@ -1,1 +1,1 @@
-Repository projet 9 : animations pour studio fictive Koukaki pour OpenClassrooms
+Repository projet 9 : travail sur les animations CSS pour studio fictive Koukaki d'OpenClassrooms
